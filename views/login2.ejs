@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+   <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <title>Tela de login</title>
+       <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+       <div>
+           <button onclick="voltar()" class="seta" style="font-size: 22px;">&#8592</button>
+           <button onclick="inicio()" class="inicio" style="font-size: 15px;">&#916 Inicio</button>
+       </div>
+    
+       <h1>Login</h1>
+       <br>
+
+       <!-- Formulário -->
+       <form action="/login" method="POST">
+           <div class="emaill">
+               <label for="username"> E-Mail:</label>
+               <input placeholder="seu@email.com" type="text" id="username" name="username" required>
+           </div>
+           <br>
+           <div class="senha">
+               <label for="password"> Senha:</label>
+               <input placeholder="Senha" type="password" id="password" name="password" required>
+           </div>
+           <br>
+           <div class="esquecer">Forgot <a href="#" disabled="true">password?</a></div>
+           <br>
+
+           <div class="btn">
+            <button type="submit" class="botao1">Entrar</button>
+            <a href="/cadastro" class="botao2">Cadastre-se</a>
+        </div>
+        
+       </form>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+body {background-color: #eee;}
+h1 {
+    color: #0796DF;
+    text-align: center;
+    font-size: 50px;
+  
+  }
+
+.Titulo {
+    color: blue;
+    font-size: 27px;
+    border: #FFFFFF;
+}
+.botao1:hover{
+    background:#041986;
+	color:#fff;
+	border-color:#00f;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.botao1 {
+    color: #FFFFFF;
+    background: #00a6fb;
+    width: 100px;
+    height: 40px;
+    border-color: black;
+    border-radius: 50px;
+}
+.botao2:hover{
+    background:#052c6b;
+	color:#fff;
+	border-color:#00f;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.botao2 {
+    color: #FFFFFF;
+    background-color: #116D9C;
+    gap: 50px; 
+    width: 110px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+
+.text{
+    width: 300px;
+    height: 30px;
+    border: #FFFFFF;
+}
+.inicio:hover{
+    background:#bfc2db;
+	color: black;
+	border-color:#00f;
+}
+.inicio{
+background-color: #eee;
+border: #FFFFFF;
+margin: 3px;
+
+}
+
+.seta:hover{
+    background:#bfc2db;
+	color: black;
+	border-color:#00f;
+}
+
+.seta{
+background-color: #eee;
+border: #FFFFFF;
+margin: 40px;
+margin-top: 28px;
+}
+
+.texto:hover{
+	color: blue;
+	border-color:#00f;
+}
+
+
+#Email {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#Senha{ 
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.emaill{
+    width: 950px;
+    margin: 20px;
+    background-color: #eee;
+    margin-left: 40px;
+    position: relative;
+    left: 100px;
+}
+.senha{
+width: 950px;
+margin: 20px;
+background-color: #eee;
+margin-left: 40px;
+position: relative;
+    left: 100px;
+}
+.esquecer{
+border-color: black;
+position: relative;
+    left: 955px;
+    padding: 0;
+    width: 138px;
+background-color: #eee;
+}
+
+.btn{
+    position: relative;
+    left: calc(50% - 150px);
+    max-width: 300px;
+    max-height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+.rodape{
+    background-color: #00a6fb;
+    color: #fff;
+    padding: 12.5px;
+    text-align: left;
+    margin-top: 44px;
+}
+
+</style>
+
+
+       <!-- Rodapé -->
+       <footer class="rodape"><b>Todos os direitos reservados©2023</b></footer>
+       <script src="script.js"></script>
+   </body>
+</html>
